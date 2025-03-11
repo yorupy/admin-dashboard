@@ -11,6 +11,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -92,6 +93,7 @@ header {
     grid-template-rows: 4rem 1fr;
     padding: 1rem;
     background-color: var(--sky-blue);
+    gap: 3rem;
 }
 
 header svg {
@@ -106,6 +108,20 @@ header svg {
 }
 
 .heading svg {
-    width: 50px;
+    width: 3rem;
     height: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 3rem;
+}
+
+nav .links {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    align-items: start;
+    gap: 1.5rem;
 }
