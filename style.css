@@ -57,6 +57,10 @@ h6 {
     text-wrap: balance;
 }
 
+:root {
+    --sky-blue: rgb(67, 145, 207);
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -66,6 +70,7 @@ body {
 
 header {
     border: 1px solid blue;
+    color: white;
 }
 
 main {
@@ -80,4 +85,27 @@ main {
 
 .board {
     border: 1px solid yellow;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 4rem 1fr;
+    padding: 1rem;
+    background-color: var(--sky-blue);
+}
+
+header svg {
+    fill: white;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.heading svg {
+    width: 50px;
+    height: auto;
 }
