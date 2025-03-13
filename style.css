@@ -177,6 +177,12 @@ search svg {
     height: auto;
 }
 
+search input {
+    background-color: rgb(227, 232, 239);
+    border: none;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+}
 
 
 .board {
