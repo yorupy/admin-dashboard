@@ -157,12 +157,13 @@ nav a {
     border: 1px solid skyblue;
     display: grid;
     grid-template-rows: 4rem 1fr;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    align-items: center;
 }
 
 .dash .top {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
 }
 
 search {
@@ -173,15 +174,38 @@ search {
 }
 
 search svg {
-    width: 1.8rem;
+    width: 1.5rem;
     height: auto;
 }
 
 search input {
     background-color: rgb(227, 232, 239);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 0.2rem 1rem;
+}
+
+.user-controls {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+    gap: 2rem;
+    align-items: center;
+}
+
+.user-controls svg {
+    width: 1.5rem;
+    height: auto;
+}
+
+.user-controls img {
+    width: 3rem;
+    border-radius: 100%;
+    height: auto;
+}
+
+.user-controls h2 {
+    font-size: 1.3rem;
 }
 
 
