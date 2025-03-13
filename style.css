@@ -91,7 +91,7 @@ main {
 header {
     display: grid;
     grid-template-rows: 4rem 1fr;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: var(--sky-blue);
     gap: 3rem;
 }
@@ -105,6 +105,10 @@ header svg {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 0.5rem;
+}
+
+.heading h1 {
+    font-size: 1.6rem;
 }
 
 .heading svg {
@@ -152,15 +156,29 @@ nav a {
 .dash {
     border: 1px solid skyblue;
     display: grid;
-    grid-template-rows: 5rem 1fr;
-    padding: 1rem 2rem;
+    grid-template-rows: 4rem 1fr;
+    padding: 0.5rem 2rem;
 }
 
-.board {
-    border: 1px solid plum;
+.dash .top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+search {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    align-items: center;
 }
 
 search svg {
-    width: 2rem;
+    width: 1.8rem;
     height: auto;
+}
+
+
+
+.board {
+    border: 1px solid plum;
 }
