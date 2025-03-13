@@ -236,6 +236,22 @@ search input {
     font-size: 1.3rem;
 }
 
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+    gap: 2rem;
+}
+
+.actions button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--sky-blue);
+    color: white;
+    font-weight: bold;
+}
+
 
 .board {
     border: 1px solid plum;
