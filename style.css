@@ -208,6 +208,34 @@ search input {
     font-size: 1.3rem;
 }
 
+.bottom {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    align-items: center;
+}
+
+.bottom img {
+    width: 5rem;
+    height: auto;
+    border-radius: 100%;
+}
+
+.bottom .user-card {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.bottom .user-card {
+    font-size: 0.9rem;
+}
+
+.bottom .user-card span {
+    font-size: 1.3rem;
+}
+
 
 .board {
     border: 1px solid plum;
