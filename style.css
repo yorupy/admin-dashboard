@@ -277,4 +277,50 @@ search input {
     border: 1px solid blue;
 }
 
-.projects {}
+.projects {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    gap: 0.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.5rem 1fr;
+    border-radius: 10px;
+    height: 10rem;
+
+}
+
+.project-card .color {
+    background-color: #F1B429;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project-card svg {
+    width: 1.5rem;
+    height: auto;
+}
+
+.project-card .content {
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    gap: 1rem;
+}
+
+.content p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.content h4 {
+    font-size: 1.2rem;
+}
