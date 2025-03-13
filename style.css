@@ -255,4 +255,23 @@ search input {
 
 .board {
     border: 1px solid plum;
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem 2rem 3rem 1rem;
+}
+
+.board .projects {
+    border: 1px solid red;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.board .announcements {
+    border: 1px solid yellow;
+}
+
+.board .trending {
+    border: 1px solid blue;
 }
