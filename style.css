@@ -257,7 +257,7 @@ search input {
     border: 1px solid plum;
     background-color: #E2E8F0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 20rem;
     grid-template-rows: 1fr 1fr;
     padding: 1rem;
     gap: 1rem;
@@ -285,7 +285,7 @@ search input {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
 }
 
@@ -328,14 +328,29 @@ search input {
 .announcements {
     display: grid;
     grid-template-rows: max-content 1fr;
+    gap: 0.5rem;
 }
 
 .announcements .new-cards {
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    border-radius: 10px;
 }
 
 .announcements p {
     font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.8);
+}
+
+.new-cards .new {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.new-cards .new:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
