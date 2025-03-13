@@ -294,7 +294,7 @@ search input {
     display: grid;
     grid-template-columns: 0.5rem 1fr;
     border-radius: 10px;
-    height: 10rem;
+    height: 14rem;
 
 }
 
@@ -323,4 +323,19 @@ search input {
 
 .content h4 {
     font-size: 1.2rem;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.announcements .new-cards {
+    background-color: white;
+    padding: 2rem;
+}
+
+.announcements p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.8);
 }
