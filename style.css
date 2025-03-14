@@ -70,22 +70,12 @@ body {
 }
 
 header {
-    border: 1px solid blue;
     color: white;
 }
 
 main {
-    border: 1px solid red;
     display: grid;
     grid-template-rows: 11rem 1fr;
-}
-
-.dash {
-    border: 1px solid green;
-}
-
-.board {
-    border: 1px solid yellow;
 }
 
 header {
@@ -154,7 +144,6 @@ nav a {
 }
 
 .dash {
-    border: 1px solid skyblue;
     display: grid;
     grid-template-rows: 4rem 1fr;
     padding: 0.5rem 4rem 0.5rem 2rem;
@@ -254,7 +243,6 @@ search input {
 
 
 .board {
-    border: 1px solid plum;
     background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 1fr 20rem;
@@ -264,18 +252,10 @@ search input {
 }
 
 .board .projects {
-    border: 1px solid red;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.board .announcements {
-    border: 1px solid yellow;
-}
-
-.board .trending {
-    border: 1px solid blue;
-}
 
 .projects {
     display: grid;
